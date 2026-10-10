@@ -56,7 +56,8 @@ nav{display:flex;align-items:center;justify-content:space-between;gap:16px 24px;
 h1{font-size:clamp(40px,5.2vw,70px);line-height:1.02;font-weight:300;letter-spacing:-.035em;margin:24px 0 24px;text-wrap:balance}
 h1 em{font-style:normal;font-weight:500}
 .lede{font-size:clamp(18px,1.8vw,21px);line-height:1.5;font-weight:300;max-width:36ch;margin:0}
-.who{margin:22px 0 0;font-size:16px;line-height:1.6;max-width:44ch;color:var(--muted)}
+.lede2{margin:18px 0 0;font-size:17px;line-height:1.55;max-width:44ch;color:var(--fg)}
+.who{margin:18px 0 0;font-size:16px;line-height:1.6;max-width:44ch;color:var(--muted)}
 .who strong{color:var(--fg);font-weight:600}
 .ctas{display:flex;flex-wrap:wrap;gap:12px 16px;align-items:center;margin-top:30px}
 .btn{display:inline-block;text-decoration:none;font:600 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;padding:15px 22px;border:1.5px solid var(--fg);background:var(--fg);color:var(--bg);border-radius:2px;cursor:pointer}
@@ -207,8 +208,9 @@ input:focus,textarea:focus{outline:2px solid #E98575;outline-offset:1px}
     <div class="hero-copy">
       <p class="eyebrow">Below the line of visibility</p>
       <h1>Everyone is watching the front stage. <em>We built the backstage.</em></h1>
-      <p class="lede">AI got better at answers. OmnIA records what each answer stood on: the events, the evidence and the approvals behind every decision, in order.</p>
-      <p class="who">For <strong>firms that run on judgment</strong>: law, consulting, family offices and others. The system connects and proposes. The people with authority decide.</p>
+      <p class="lede">AI keeps getting better at answers, and the reasoning behind them gets lost. Firms live the same problem: decisions are made with no record of the evidence that supported them.</p>
+      <p class="lede2">OmnIA records that path: the events, the evidence and the approvals behind each decision, in logical and temporal order.</p>
+      <p class="who">For <strong>firms that run on informed human judgment</strong>: law, consulting, family offices and others. The system connects the evidence and proposes paths. Those who see the whole tie the connections together; those with authority decide. This is where AI and people each take their place.</p>
       <div class="ctas">
         <a class="btn" href="#contact">Talk to us</a>
         <a class="btn ghost" href="#how">See how it works</a>
@@ -238,23 +240,21 @@ input:focus,textarea:focus{outline:2px solid #E98575;outline-offset:1px}
   <section class="ruler" id="stage" aria-labelledby="h-stage">
     <div class="ruler-head">
       <p class="eyebrow" id="h-stage">Stage of the solution</p>
-      <p><strong>The value proposition is complete. The product is in validation,</strong> and it will change with what validation shows.</p>
     </div>
     <div class="stages">
       <div class="stage done"><h3>Concept <span class="here">done</span></h3><p>The thesis and the method. Documents organized and classified by entity.</p></div>
-      <div class="stage now"><h3>Validate <span class="here">← we are here</span></h3><p>The chain of events behind a real decision. The human approval gate. Answers that say “not on record”.</p></div>
+      <div class="stage now"><h3>Validate <span class="here">← we are here</span></h3><p>The chain of events behind a real decision. The human approval gate. Answers that say “not on record”. A second domain, at its first step.</p></div>
       <div class="stage"><h3>Optimize</h3><p>Recording as a side effect of daily work. Records from many agents in one place.</p></div>
-      <div class="stage"><h3>Replicate</h3><p>A second domain. Other kinds of firms.</p></div>
+      <div class="stage"><h3>Replicate</h3><p>Other kinds of firms.</p></div>
     </div>
-    <span class="marg">stages follow the Design Doing Harness · each stage closes on a human gate</span>
   </section>
 
   <section class="sec" aria-labelledby="h-problem">
     <div class="side"><p class="eyebrow">The problem</p></div>
     <div class="body">
       <h2 id="h-problem">Firms keep documents. They lose the reasoning.</h2>
-      <p>Every serious decision draws on three things: the documents on file, what the organization learned before, and the judgment of the people in the room. The documents stay. The other two leave with the people.</p>
-      <p>When a partner moves on, the reasons go with them. When a decision is questioned five years later, nobody can show what it stood on, who weighed it, or what was known at the time.</p>
+      <p>Every decision should rest on evidence: the documents on file, what the organization learned before, and the judgment of the people in the meeting room. The documents stay. The learning and the judgment leave with the people, and that is where knowledge management usually fails.</p>
+      <p>When a partner leaves, their experience leaves too. When a decision is questioned five years later, no one can faithfully reconstruct the evidence behind it, who weighed it, or what the context was at the time.</p>
       <div class="trio">
         <div><svg class="icon" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M8 3h10l5 5v19H8z"/><path d="M18 3v5h5M12 14h7M12 18h7M12 22h4"/></svg><span class="spaced">Documents</span></div>
         <div><svg class="icon" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="15" cy="15" r="11"/><path d="M15 8v7l5 3"/></svg><span class="spaced">History</span></div>
@@ -266,142 +266,25 @@ input:focus,textarea:focus{outline:2px solid #E98575;outline-offset:1px}
   <section class="sec" aria-labelledby="h-now">
     <div class="side"><p class="eyebrow">Why now</p><span class="chip vis">direction · optimize stage</span></div>
     <div class="body">
-      <h2 id="h-now">Everyone will have an agent. Who keeps what they learned?</h2>
-      <p>Agents read, weigh and propose all day, and the reasoning is gone when the session ends. Each person gains an assistant. The organization gains nothing it can keep.</p>
-      <p><strong>OmnIA is the shared record:</strong> one place where what people and their agents worked out is kept with its evidence, its author and its approval.</p>
+      <h2 id="h-now">Everyone will work with agents. Who keeps what they learned?</h2>
+      <p>Agents read, weigh and propose all the time, but rarely show the reasoning that led to a conclusion. When the session ends, the thread is gone. Each person gains an assistant; the organization keeps nothing it can reuse.</p>
+      <p><strong>OmnIA builds the environment behind the work:</strong> a shared record where the knowledge produced by people and their agents is kept with its evidence, its authors and its approvals.</p>
     </div>
   </section>
 
   <section class="sec" id="how" aria-labelledby="h-chain">
     <div class="side"><p class="eyebrow">How it works</p><span class="chip val">validating</span></div>
     <div class="body">
-      <h2 id="h-chain">Ask why, and the path back is already there.</h2>
-      <p>Work moves forward: research, findings, insight, recommendation. The question arrives the other way: why did we decide this? Without a record, someone rebuilds the path by hand, if anyone still can. With OmnIA, the path back exists before the question.</p>
-      <p><strong>It matters more now.</strong> AI proposes without showing how it got there. OmnIA records how each piece of knowledge was produced: by which person or agent, from which sources, and who accepted it.</p>
-
-      <div class="panel-h"><span class="spaced">Without OmnIA</span><span class="mono">from the front stage, both look the same</span></div>
-      <div class="diagram">
-        <svg viewBox="0 0 1000 290" role="img" aria-labelledby="wo-t wo-d">
-          <title id="wo-t">A decision without OmnIA</title>
-          <desc id="wo-d">The client sees a question and a recommendation. Behind the line of visibility, the material lies in scattered fragments: interview notes on a laptop, a market report in a folder, a closed AI session, a photo of post-its, and a rejected option nobody wrote down. Years later there is no path back.</desc>
-          <defs>
-            <marker id="m1" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="var(--muted)"/></marker>
-          </defs>
-          <rect width="1000" height="290" fill="var(--card)"/>
-          <line x1="24" y1="104" x2="976" y2="104" stroke="var(--fg)" stroke-width="1" stroke-dasharray="6,5"/>
-          <line x1="128" y1="16" x2="128" y2="252" stroke="var(--rule)" stroke-width="1"/>
-          <text class="dg-l" x="24" y="58">FRONT STAGE</text>
-          <text class="dg-l" x="232" y="96">LINE OF VISIBILITY</text>
-          <text class="dg-l" x="24" y="176">BACKSTAGE</text>
-
-          <line x1="280" y1="54" x2="826" y2="54" stroke="var(--muted)" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#m1)"/>
-          <rect x="452" y="34" width="200" height="12" fill="var(--card)"/>
-          <text class="dg-l" x="552" y="44" text-anchor="middle">WHAT GETS KEPT</text>
-
-          <rect x="150" y="30" width="130" height="48" rx="6" fill="var(--card)" stroke="var(--fg)" stroke-width="1"/>
-          <text class="dg-t" x="215" y="51" text-anchor="middle">Question</text>
-          <text class="dg-s" x="215" y="66" text-anchor="middle">where should we grow?</text>
-          <rect x="830" y="30" width="130" height="48" rx="6" fill="var(--card)" stroke="var(--fg)" stroke-width="1"/>
-          <text class="dg-t" x="895" y="51" text-anchor="middle">Recommendation</text>
-          <text class="dg-s" x="895" y="66" text-anchor="middle">launch service X</text>
-
-          <g opacity=".8">
-            <rect x="150" y="128" width="150" height="44" rx="6" fill="none" stroke="var(--muted)" stroke-width="1" stroke-dasharray="5,4"/>
-            <text class="dg-t" x="225" y="147" text-anchor="middle" style="fill:var(--muted)">Interview notes</text>
-            <text class="dg-s" x="225" y="161" text-anchor="middle">one consultant’s laptop</text>
-            <rect x="345" y="160" width="150" height="44" rx="6" fill="none" stroke="var(--muted)" stroke-width="1" stroke-dasharray="5,4"/>
-            <text class="dg-t" x="420" y="179" text-anchor="middle" style="fill:var(--muted)">Market report</text>
-            <text class="dg-s" x="420" y="193" text-anchor="middle">shared folder, v7</text>
-            <rect x="540" y="124" width="150" height="44" rx="6" fill="none" stroke="var(--muted)" stroke-width="1" stroke-dasharray="5,4"/>
-            <text class="dg-t" x="615" y="143" text-anchor="middle" style="fill:var(--muted)">AI session</text>
-            <text class="dg-s" x="615" y="157" text-anchor="middle">closed, not saved</text>
-            <rect x="660" y="196" width="150" height="44" rx="6" fill="none" stroke="var(--muted)" stroke-width="1" stroke-dasharray="5,4"/>
-            <text class="dg-t" x="735" y="215" text-anchor="middle" style="fill:var(--muted)">Workshop synthesis</text>
-            <text class="dg-s" x="735" y="229" text-anchor="middle">photo of post-its</text>
-          </g>
-          <g opacity=".4">
-            <rect x="250" y="210" width="150" height="44" rx="6" fill="none" stroke="var(--muted)" stroke-width="1" stroke-dasharray="2,4"/>
-            <text class="dg-t" x="325" y="229" text-anchor="middle" style="fill:var(--muted)">Rejected option</text>
-            <text class="dg-s" x="325" y="243" text-anchor="middle">never written down</text>
-          </g>
-          <text x="895" y="160" text-anchor="middle" style="font:300 40px var(--sans);fill:var(--muted)">?</text>
-          <text class="dg-s" x="150" y="278">years later, “why this?” has no path back · the answer depends on who is still around</text>
-        </svg>
-      </div>
-
-      <div class="panel-h"><span class="spaced">With OmnIA</span><span class="chip val">validating</span></div>
-      <div class="diagram">
-        <svg viewBox="0 0 1000 400" role="img" aria-labelledby="wi-t wi-d">
-          <title id="wi-t">The same decision with OmnIA</title>
-          <desc id="wi-d">The same question and recommendation. Behind the line, interviews and a market report feed coded findings. Two readings compete: reading A, proposed by an agent and accepted by a manager, is chosen; reading B is rejected with its reason kept. Interviews with segment B are flagged as missing evidence. The decision record is signed by a partner. Asking why traces the path back from the recommendation to its sources.</desc>
-          <defs>
-            <marker id="m2" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="var(--muted)"/></marker>
-            <marker id="m2a" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="var(--accent)"/></marker>
-          </defs>
-          <rect width="1000" height="400" fill="var(--card)"/>
-          <line x1="24" y1="104" x2="976" y2="104" stroke="var(--fg)" stroke-width="1" stroke-dasharray="6,5"/>
-          <line x1="128" y1="16" x2="128" y2="356" stroke="var(--rule)" stroke-width="1"/>
-          <text class="dg-l" x="24" y="58">FRONT STAGE</text>
-          <text class="dg-l" x="232" y="96">LINE OF VISIBILITY</text>
-          <text class="dg-l" x="24" y="190">BACKSTAGE</text>
-          <text class="dg-l" x="24" y="204" style="fill:var(--fg)">OMNIA</text>
-
-          <line x1="280" y1="54" x2="826" y2="54" stroke="var(--muted)" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#m2)"/>
-          <line x1="895" y1="128" x2="895" y2="82" stroke="var(--muted)" stroke-width="1.2" marker-end="url(#m2)"/>
-          <path d="M280 152 H300 Q308 152 308 160 V172 Q308 180 316 180 H326" fill="none" stroke="var(--muted)" stroke-width="1.2" marker-end="url(#m2)"/>
-          <path d="M280 220 H300 Q308 220 308 212 V200 Q308 192 316 192 H326" fill="none" stroke="var(--muted)" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#m2)"/>
-          <path d="M460 180 H470 Q478 180 478 172 V160 Q478 152 486 152 H496" fill="none" stroke="var(--muted)" stroke-width="1.2" marker-end="url(#m2)"/>
-          <path d="M460 192 H470 Q478 192 478 200 V228 Q478 236 486 236 H496" fill="none" stroke="var(--muted)" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#m2)"/>
-          <line x1="650" y1="152" x2="826" y2="152" stroke="var(--muted)" stroke-width="1.2" marker-end="url(#m2)"/>
-          <rect x="702" y="132" width="72" height="12" fill="var(--card)"/>
-          <text class="dg-l" x="738" y="142" text-anchor="middle">CHOSEN</text>
-          <text class="dg-l" x="662" y="240">REJECTED · REASON KEPT</text>
-          <line x1="395" y1="262" x2="395" y2="214" stroke="var(--muted)" stroke-width="1.2" stroke-dasharray="2,4" marker-end="url(#m2)"/>
-
-          <path d="M960 54 Q976 54 976 70 V322 Q976 330 968 330 H156" fill="none" stroke="var(--accent)" stroke-width="1.6" marker-end="url(#m2a)"/>
-          <rect x="356" y="312" width="410" height="12" fill="var(--card)"/>
-          <text class="dg-a" x="561" y="322" text-anchor="middle">“WHY THIS?” · TRACED BACK FROM THE DECISION TO ITS SOURCES</text>
-
-          <rect x="150" y="30" width="130" height="48" rx="6" fill="var(--card)" stroke="var(--fg)" stroke-width="1"/>
-          <text class="dg-t" x="215" y="51" text-anchor="middle">Question</text>
-          <text class="dg-s" x="215" y="66" text-anchor="middle">where should we grow?</text>
-          <rect x="830" y="30" width="130" height="48" rx="6" fill="var(--card)" stroke="var(--fg)" stroke-width="1"/>
-          <text class="dg-t" x="895" y="51" text-anchor="middle">Recommendation</text>
-          <text class="dg-s" x="895" y="66" text-anchor="middle">launch service X</text>
-
-          <rect x="150" y="128" width="130" height="48" rx="6" fill="var(--card)" stroke="var(--fg)" stroke-width="1"/>
-          <text class="dg-t" x="215" y="149" text-anchor="middle">12 interviews</text>
-          <text class="dg-s" x="215" y="164" text-anchor="middle">primary · testimony</text>
-          <rect x="150" y="196" width="130" height="48" rx="6" fill="var(--card)" stroke="var(--fg)" stroke-width="1"/>
-          <text class="dg-t" x="215" y="217" text-anchor="middle">Market report</text>
-          <text class="dg-s" x="215" y="232" text-anchor="middle">secondary · document</text>
-          <rect x="330" y="162" width="130" height="48" rx="6" fill="var(--card)" stroke="var(--fg)" stroke-width="1"/>
-          <text class="dg-t" x="395" y="183" text-anchor="middle">Findings</text>
-          <text class="dg-s" x="395" y="198" text-anchor="middle">coded · page refs</text>
-          <rect x="500" y="128" width="150" height="48" rx="6" fill="var(--card)" stroke="var(--fg)" stroke-width="1.8"/>
-          <text class="dg-t" x="575" y="149" text-anchor="middle">Reading A</text>
-          <text class="dg-s" x="575" y="164" text-anchor="middle">agent · accepted J.R.</text>
-          <rect x="500" y="212" width="150" height="48" rx="6" fill="var(--card)" stroke="var(--muted)" stroke-width="1" stroke-dasharray="5,4"/>
-          <text class="dg-t" x="575" y="233" text-anchor="middle" style="fill:var(--muted)">Reading B</text>
-          <text class="dg-s" x="575" y="248" text-anchor="middle">one source only</text>
-          <rect x="830" y="128" width="130" height="48" rx="6" fill="var(--card)" stroke="var(--fg)" stroke-width="1.8"/>
-          <text class="dg-t" x="895" y="149" text-anchor="middle">Decision record</text>
-          <text class="dg-s" x="895" y="164" text-anchor="middle">signed · partner</text>
-          <rect x="320" y="262" width="150" height="44" rx="6" fill="none" stroke="var(--muted)" stroke-width="1" stroke-dasharray="2,4"/>
-          <text class="dg-t" x="395" y="281" text-anchor="middle">Segment B interviews</text>
-          <text class="dg-s" x="395" y="295" text-anchor="middle">missing evidence</text>
-
-          <text class="dg-s" x="150" y="384">each block: who or which agent made it · from which sources · who accepted it · append-only</text>
-        </svg>
-      </div>
-      <div class="caption"><span class="mono">illustrative · no client data</span><span class="mono">solid: strong evidence · dashed: single source or missing</span></div>
+      <h2 id="h-chain">How did we get here?</h2>
+      <p>Which evidence brought us to this conclusion? That question is where OmnIA shows its value: it traces the decision tree back to the start of the process.</p>
+      <p>OmnIA supports, backstage, the work that happens on the surface: research, findings, insights, recommendations and connections. Without a record, someone has to rebuild the path by hand. <strong>With OmnIA, the path back exists before the question does:</strong> each block of knowledge carries which person or agent produced it, from which sources, who refuted it and who accepted it.</p>
 
       <div class="ledger" role="table" aria-label="What changes">
         <div class="h" role="columnheader"></div><div class="h" role="columnheader">Without OmnIA</div><div class="h" role="columnheader">With OmnIA</div>
         <div class="r">Sources</div><div>scattered across people and tools</div><div>linked to the case, with their origin</div>
         <div class="r">Alternatives</div><div>forgotten</div><div>kept, with the reason</div>
         <div class="r">Gaps</div><div>invisible</div><div>flagged as missing evidence</div>
-        <div class="r">AI output</div><div>accepted without a trail</div><div>marked as proposed, until a person accepts it</div>
+        <div class="r">AI output</div><div>accepted without a trail</div><div>marked as proposed, until a person accepts or refutes it</div>
         <div class="r">Approval</div><div>implicit</div><div>signed, at each person’s level</div>
         <div class="r">Years later</div><div>“ask whoever was there”</div><div>the decision rebuilt as it stood that day</div>
       </div>
@@ -418,56 +301,41 @@ input:focus,textarea:focus{outline:2px solid #E98575;outline-offset:1px}
   <section class="sec" aria-labelledby="h-hands">
     <div class="side"><p class="eyebrow">Many hands</p><span class="chip vis">in design</span></div>
     <div class="body">
-      <h2 id="h-hands">Many hands, one record.</h2>
-      <p>In a consultancy, the same question is worked in separate streams: one team on the numbers, another on interviews, a third on regulation. OmnIA links what each stream produced, shows where the readings disagree, and takes the choice to whoever has the authority to make it.</p>
+      <h2 id="h-hands">One project, many minds, a single record.</h2>
+      <p>In a consultancy, a project is worked on several fronts: one team on the numbers, another on interviews, a third on regulation. OmnIA links what each front produced, shows where the readings diverge, and presents the possible paths to whoever has the authority to choose.</p>
       <p><strong>Each approval is recorded at its level.</strong> An analyst confirms a source. A manager accepts a reading. A partner signs the recommendation.</p>
       <span class="marg">decision rights are part of the record · who may approve what is defined before the system goes live</span>
     </div>
   </section>
 
-  <section class="sec" aria-labelledby="h-gap">
-    <div class="side"><p class="eyebrow">What it shows</p><span class="chip val">validating</span></div>
-    <div class="body">
-      <h2 id="h-gap">A broken link is visible.</h2>
-      <p>A decision with no document behind it. An approval with no author. A case where nothing has been decided. OmnIA shows the gap instead of filling it.</p>
-      <div class="cols">
-        <div class="item"><svg class="icon" viewBox="0 0 30 30"><circle cx="15" cy="15" r="11" fill="none" stroke="var(--fg)" stroke-width="1.5"/><circle cx="15" cy="15" r="6" fill="var(--fg)"/></svg><h3>Decided</h3><p>With the evidence it stood on, who proposed it and who approved it.</p></div>
-        <div class="item broken"><svg class="icon" viewBox="0 0 30 30" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"><path d="M4 15h8M18 15h8"/><path d="M12 11v8M18 11v8"/></svg><h3>Missing evidence</h3><p>A step with nothing underneath it. Shown as missing, never filled with a guess.</p></div>
-        <div class="item dash"><svg class="icon" viewBox="0 0 30 30"><circle cx="15" cy="15" r="11" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="4 4"/></svg><h3>Open</h3><p>Cases where no decision exists yet, listed as open.</p></div>
-      </div>
-      <span class="marg">empty retrieval returns “not on record” · it never generates a source</span>
-    </div>
-  </section>
-
   <section class="sec" aria-labelledby="h-law">
-    <div class="side"><p class="eyebrow">For law firms</p><span class="chip vis">in development</span></div>
+    <div class="side"><p class="eyebrow">Complex decisions</p><span class="chip vis">in development</span></div>
     <div class="body">
-      <h2 id="h-law">Chain of custody for the reasoning behind a case.</h2>
-      <p>A complex case rests on claims, evidence, precedents and answers to objections. OmnIA keeps that chain and shows where a claim has nothing underneath it, where an objection was never answered, where a key document is missing.</p>
-      <p>It does not judge the merits. It shows the structure, so your team can. The same applies to a consultancy’s recommendation, or a family office decision resting on an assumption no one wrote down.</p>
+      <h2 id="h-law">Chain of custody for reasoning.</h2>
+      <p>A complex decision rests on premises, evidence, precedents and answers to objections. OmnIA keeps that chain and shows where a premise has nothing underneath it, where an objection was never answered, where a key document is missing.</p>
+      <p>It does not judge the merits. It shows the structure, so your team can: a law firm’s thesis, a consultancy’s recommendation, or a family office decision resting on an assumption no one wrote down.</p>
     </div>
   </section>
 
   <section class="sec" aria-labelledby="h-method">
     <div class="side"><p class="eyebrow">The method</p></div>
     <div class="body">
-      <h2 id="h-method">A method first. Then the system.</h2>
-      <p>Every deployment starts with your people, not with software. The system is set up only after the flows and the rules are agreed.</p>
+      <h2 id="h-method">First understanding. Then the system.</h2>
+      <p>Every deployment starts with people, workflows and processes, not with software. The system is configured only after the flows and the rules are agreed.</p>
       <div class="cols five">
-        <div class="item step"><span class="n">01</span><svg class="icon" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" style="margin-top:12px"><circle cx="13" cy="13" r="8"/><path d="M19 19l7 7"/></svg><h3>Understand</h3><p>How information moves through the business, observed.</p></div>
-        <div class="item step"><span class="n">02</span><svg class="icon" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" style="margin-top:12px"><path d="M15 27V15M15 15L6 5M15 15l9-10"/></svg><h3>Divide</h3><p>What belongs to the machine and what belongs to people.</p></div>
-        <div class="item step"><span class="n">03</span><svg class="icon" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.5" style="margin-top:12px"><circle cx="6" cy="8" r="3"/><circle cx="24" cy="8" r="3"/><circle cx="15" cy="23" r="3"/><path d="M8 10l5 10M22 10l-5 10M9 8h12"/></svg><h3>Design</h3><p>Flows, access and governance.</p></div>
-        <div class="item step"><span class="n">04</span><svg class="icon" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-top:12px"><circle cx="15" cy="15" r="11"/><path d="M10 15l4 4 7-8"/></svg><h3>Approve</h3><p>Nothing goes live without your sign-off.</p></div>
-        <div class="item step"><span class="n">05</span><svg class="icon" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" style="margin-top:12px"><path d="M24 15A9 9 0 1 1 18.5 6.7"/><circle cx="22" cy="7" r="2.5" fill="var(--accent)" stroke="none"/></svg><h3>Deploy</h3><p>The system runs, with the human gate built in.</p></div>
+        <div class="item step"><span class="n">01</span><svg class="icon" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" style="margin-top:12px"><circle cx="13" cy="13" r="8"/><path d="M19 19l7 7"/></svg><h3>Understand</h3><p>How data and information move through the business, observed up close.</p></div>
+        <div class="item step"><span class="n">02</span><svg class="icon" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" style="margin-top:12px"><path d="M15 27V15M15 15L6 5M15 15l9-10"/></svg><h3>Divide</h3><p>Which work belongs to people and which the machine does better.</p></div>
+        <div class="item step"><span class="n">03</span><svg class="icon" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.5" style="margin-top:12px"><circle cx="6" cy="8" r="3"/><circle cx="24" cy="8" r="3"/><circle cx="15" cy="23" r="3"/><path d="M8 10l5 10M22 10l-5 10M9 8h12"/></svg><h3>Design</h3><p>Flows, access permissions and governance.</p></div>
+        <div class="item step"><span class="n">04</span><svg class="icon" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-top:12px"><circle cx="15" cy="15" r="11"/><path d="M10 15l4 4 7-8"/></svg><h3>Approve</h3><p>Nothing goes live without approval from whoever decides.</p></div>
+        <div class="item step"><span class="n">05</span><svg class="icon" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" style="margin-top:12px"><path d="M24 15A9 9 0 1 1 18.5 6.7"/><circle cx="22" cy="7" r="2.5" fill="var(--accent)" stroke="none"/></svg><h3>Deploy</h3><p>The system runs, with human checkpoints built in.</p></div>
       </div>
-      <p style="margin-top:26px"><strong>OmnIA records what passes through it. Nothing else.</strong> We apply to our own work the rule the system enforces on yours.</p>
     </div>
   </section>
 
   <section class="sec band" aria-labelledby="h-hood">
     <div class="side"><p class="eyebrow">Under the hood</p></div>
     <div class="body">
-      <h2 id="h-hood">The system proposes. The people with authority decide.</h2>
+      <h2 id="h-hood">The system makes the connections and proposes. The people with authority decide.</h2>
       <ul class="rules">
         <li><span>Built with Claude. The answering layer moves to Claude during validation. <span class="chip val">validating</span></span></li>
         <li><span>Every change to OmnIA is checked by an independent reviewer from a different model family before a person approves it. <span class="chip built">built</span></span></li>
@@ -475,7 +343,7 @@ input:focus,textarea:focus{outline:2px solid #E98575;outline-offset:1px}
         <li><span>The log is append-only and hash-chained. The past cannot be rewritten in silence. <span class="chip val">validating</span></span></li>
         <li><span>Client documents stay on infrastructure the client controls. What may reach a language model is agreed with the client. <span class="chip built">built</span></span></li>
       </ul>
-      <span class="marg">event-sourced: the state of a case is derived from its log · replay any decision as it stood on a given date</span>
+      <span class="marg">event-sourced: the state of a case derives from its records · the system rebuilds any decision from its records over time</span>
     </div>
   </section>
 
@@ -490,11 +358,11 @@ input:focus,textarea:focus{outline:2px solid #E98575;outline-offset:1px}
           <div class="git">diff</div><div>evidence</div><div class="git">commit message</div><div>the reason</div>
           <div class="git">author</div><div>who proposed</div><div class="git">parent commit</div><div>prior decision</div>
           <div class="git">branch</div><div>an option considered</div><div class="git">merge</div><div>the option chosen</div>
-          <div class="git">kept branches</div><div>options rejected, and why</div><div class="git">no equivalent</div><div class="gap">the broken link</div>
+          <div class="git">kept branches</div><div>options rejected, and why</div><div class="git">no equivalent</div><div class="gap">the missing evidence</div>
         </div>
       </div>
       <p style="margin-top:24px">Companies have systems of record for money, customers and code. None for decisions.</p>
-      <p>The method has a lineage: contribution analysis (Mayne), realist evaluation (Pawson and Tilley), and a four-layer evidence protocol (existence, quality, internal relation, strength) first used in a multi-product evaluation for an international organization. The core is the same in every field. What changes from a holding to a law firm to a clinic is the sources it reads.</p>
+      <p>The method has a lineage: contribution analysis (Mayne), realist evaluation (Pawson and Tilley), and a proprietary evidence-assessment protocol, tested in practice in a multi-product evaluation for an international organization. The core is the same in every field. What changes from a holding to a law firm to a clinic is the sources it reads.</p>
     </div>
   </section>
 
@@ -503,9 +371,9 @@ input:focus,textarea:focus{outline:2px solid #E98575;outline-offset:1px}
     <div class="body">
       <h2 id="h-cases">Where it is being tested.</h2>
       <div class="cols">
-        <div class="item"><div class="k"><b>Concluded</b><span>Public sector</span></div><h3>Where the method comes from</h3><p>A results evaluation for an international organization: sources, analysis, alternative explanations, and the one the evidence supported.</p></div>
-        <div class="item dash"><div class="k"><b>Validating</b><span>Agribusiness</span></div><h3>Family holding</h3><p>Land titles, contracts and licenses organized by property. Now recording the chain behind a real decision.</p></div>
-        <div class="item dash"><div class="k"><b>Next</b><span>Healthcare</span></div><h3>Occupational health clinic</h3><p>The second domain, to test that the core holds outside the first one.</p></div>
+        <div class="item"><div class="k"><b>Concluded</b><span>Public sector</span></div><h3>Where the method comes from</h3><p>A results evaluation for an international institution: sources, analysis, alternative explanations, and the one the evidence supported.</p></div>
+        <div class="item dash"><div class="k"><b>Validating</b><span>Agribusiness</span></div><h3>Family holding</h3><p>Land titles, contracts and licenses organized by property. Now recording the chain of events behind a real decision.</p></div>
+        <div class="item dash"><div class="k"><b>Started</b><span>Healthcare</span></div><h3>Occupational health clinic</h3><p>The method is being applied, now at step 01, Understand. The test here is whether the core holds in a context different from the first.</p></div>
       </div>
     </div>
   </section>
@@ -514,7 +382,7 @@ input:focus,textarea:focus{outline:2px solid #E98575;outline-offset:1px}
     <div class="side"><p class="eyebrow">Who is behind it</p></div>
     <div class="body">
       <h2 id="h-who">Leandro Pasini</h2>
-      <p>Design, service design and public innovation for more than twenty years, on a base in programming that goes back to the 1980s. Co-author of the Design Doing method. In innovation consulting he rebuilt by hand the path from each recommendation back to its sources. OmnIA makes that path exist before anyone asks.</p>
+      <p>Design, service design and public innovation for more than twenty years, on a base in programming since the late 1980s and in UX/UI since the early days of the web. Co-author of the Design Doing method. In innovation consulting he rebuilt by hand the path from each recommendation back to its sources. OmnIA makes that path exist before anyone asks.</p>
     </div>
   </section>
 
@@ -522,7 +390,6 @@ input:focus,textarea:focus{outline:2px solid #E98575;outline-offset:1px}
     <div class="side"><p class="eyebrow">Contact</p></div>
     <div class="body">
       <h2 id="h-contact">Talk to us.</h2>
-      <p>Tell us what kind of decisions your firm makes and where the reasoning gets lost.</p>
       <form id="cform" novalidate>
         <label>Name<input id="f-name" name="name" autocomplete="name" required></label>
         <label>Firm<input id="f-firm" name="firm" autocomplete="organization"></label>
@@ -538,7 +405,7 @@ input:focus,textarea:focus{outline:2px solid #E98575;outline-offset:1px}
     <div><a class="logo" href="#" aria-label="OmnIA"><svg viewBox="0 33 1524 432"><use href="#logo"/></svg></a></div>
     <div class="mid spaced"><span>A system of record for decisions</span></div>
     <div class="stack spaced"><span>Events</span><span>Evidence</span><span>Approval</span><span>Decision</span></div>
-    <div class="rev mono">OmnIA · São Paulo, Brazil · rev 0.6 · working draft</div>
+    <div class="rev mono">OmnIA · São Paulo, Brazil</div>
   </footer>
 </div>
 
